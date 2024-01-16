@@ -1,0 +1,26 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+features:
+- buildpack-stack=ubuntu-22
+ingress:
+  rules:
+  - component:
+      name: openai-proxy
+    match:
+      path:
+        prefix: /
+name: openai-proxy
+region: tor
+services:
+- environment_slug: python
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: leesoh/digitalocean-openai-proxy
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: openai-proxy
+  source_dir: /server
+
