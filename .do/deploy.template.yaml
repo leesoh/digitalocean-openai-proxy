@@ -15,10 +15,10 @@ name: openai-proxy
 region: tor
 services:
 - environment_slug: python
-  github:
+  git:
     branch: main
     deploy_on_push: true
-    repo: leesoh/digitalocean-openai-proxy
+    repo_clone_url: https://github.com/leesoh/digitalocean-openai-proxy.git
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
