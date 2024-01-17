@@ -1,6 +1,6 @@
 # DigitalOcean OpenAI Proxy
 
-A simple OpenAI API proxy hosted in the DigitalOcean App platform. Accompanying blog post can be found [here](https://blog.smallsec.ca/openai-proxy), or the lazy can:
+A simple OpenAI API proxy hosted in the DigitalOcean App platform. Accompanying blog post can be found [here](https://blog.smallsec.ca/openai-proxy).
 
 ## Client
 
