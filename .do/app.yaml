@@ -22,5 +22,5 @@ services:
   instance_count: 1
   instance_size_slug: basic-xxs
   name: openai-proxy
-  source_dir: /server
+  source_dir: server/
 
