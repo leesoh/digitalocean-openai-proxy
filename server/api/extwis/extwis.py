@@ -2,7 +2,7 @@ from openai import OpenAI
 
 
 def send(user_prompt: str):
-    with open("tools/extwis/system.md") as file:
+    with open("api/extwis/system.md") as file:
         system_prompt = file.read()
     client = OpenAI()
     completion = client.chat.completions.create(
